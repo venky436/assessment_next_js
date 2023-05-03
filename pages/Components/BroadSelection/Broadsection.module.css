@@ -61,7 +61,7 @@
     width: 100%;
     max-width: 1280px;
     height: 500px;
-    padding: 0 20px;
+    overflow: hidden;
 }
 .c_heading{
     margin: 0;
@@ -82,4 +82,26 @@
     border: 1px solid black;
     font-size: 15px;
     cursor: pointer;
+}
+.slider{
+    display: flex;
+    gap: 10px;
+    position: relative;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+.sub_slider{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 300px;
+    background-color: red;
+    min-width: 300px;
 }

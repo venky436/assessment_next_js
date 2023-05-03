@@ -42,6 +42,98 @@ export const broadSelection = [
                     ]
                 }
 
+            },
+            {
+                image : '',
+                heading : 'The Complete Python Bootcamp From Zero to Hero in Python',
+                author : 'Jose Portilla',
+                rating : '4.3',
+                reviewsCount : '461,365',
+                offerPrice : '299',
+                price : '3,399',
+                cardData : {
+                    totalTime : '14',
+                    text : `Learn Python like a Professional Start from the basics and go all the way to creating your own applications and games`,
+                    keyPoints : [
+                        `You will learn how to leverage the power of Python to solve tasks.`,
+                        `You will build games and programs that use Python libraries.`,
+                        `You will be able to use Python for your own work problems or personal projects.`
+                    ]
+                }
+
+            }, {
+                image : '',
+                heading : 'The Complete Python Bootcamp From Zero to Hero in Python',
+                author : 'Jose Portilla',
+                rating : '4.3',
+                reviewsCount : '461,365',
+                offerPrice : '299',
+                price : '3,399',
+                cardData : {
+                    totalTime : '14',
+                    text : `Learn Python like a Professional Start from the basics and go all the way to creating your own applications and games`,
+                    keyPoints : [
+                        `You will learn how to leverage the power of Python to solve tasks.`,
+                        `You will build games and programs that use Python libraries.`,
+                        `You will be able to use Python for your own work problems or personal projects.`
+                    ]
+                }
+
+            }, {
+                image : '',
+                heading : 'The Complete Python Bootcamp From Zero to Hero in Python',
+                author : 'Jose Portilla',
+                rating : '4.3',
+                reviewsCount : '461,365',
+                offerPrice : '299',
+                price : '3,399',
+                cardData : {
+                    totalTime : '14',
+                    text : `Learn Python like a Professional Start from the basics and go all the way to creating your own applications and games`,
+                    keyPoints : [
+                        `You will learn how to leverage the power of Python to solve tasks.`,
+                        `You will build games and programs that use Python libraries.`,
+                        `You will be able to use Python for your own work problems or personal projects.`
+                    ]
+                }
+
+            }, {
+                image : '',
+                heading : 'The Complete Python Bootcamp From Zero to Hero in Python',
+                author : 'Jose Portilla',
+                rating : '4.3',
+                reviewsCount : '461,365',
+                offerPrice : '299',
+                price : '3,399',
+                cardData : {
+                    totalTime : '14',
+                    text : `Learn Python like a Professional Start from the basics and go all the way to creating your own applications and games`,
+                    keyPoints : [
+                        `You will learn how to leverage the power of Python to solve tasks.`,
+                        `You will build games and programs that use Python libraries.`,
+                        `You will be able to use Python for your own work problems or personal projects.`
+                    ]
+                }
+
+            },
+            {
+                image : '',
+                heading : 'The Complete Python Bootcamp From Zero to Hero in Python',
+                author : 'Jose Portilla',
+                rating : '4.3',
+                reviewsCount : '461,365',
+                offerPrice : '299',
+                price : '3,399',
+                cardData : {
+                    totalTime : '14',
+                    text : `Learn Python like a Professional Start from the basics and go all the way to creating your own applications and games`,
+                    keyPoints : [
+                        `You will learn how to leverage the power of Python to solve tasks.`,
+                        `You will build games and programs that use Python libraries.`,
+                        `You will be able to use Python for your own work problems or personal projects.`
+                    ]
+                }
+
             }
         ]
     },

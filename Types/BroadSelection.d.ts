@@ -27,4 +27,11 @@ declare namespace BroadSelectionNS{
     interface IPropsForCourseBox{
         object : IBroadData
     }
+    interface IPropsForCard{
+        cardDetails : ICourse
+    }
+    interface IPropsForSlider{
+        lengthOfArray : number;
+        cardNode : React.ReactElement
+    }
 }

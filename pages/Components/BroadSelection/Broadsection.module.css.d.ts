@@ -12,5 +12,7 @@ export default{
     c_text : string,
     button : string,
     slider : string,
+    card : string,
+    sub_slider : string,
 
 }

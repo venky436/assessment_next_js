@@ -31,8 +31,8 @@ export default function Slider() {
 
         <div className={styles.slider}>
             <div className={styles.leftArrow} onClick={leftHandler}><Image src={leftArrow} alt='left'/></div>
-            <Image src={slideImages[index]} alt='image' style={{display : 'block',width : '100%',height : '100%',objectFit : 'cover'}}/>
             <div className={styles.rightArrow} onClick={rightHandler}><Image src={rightArrow} alt='left'/></div>
+            <Image src={slideImages[index]} alt='image' style={{display : 'block',width : '100%',height : '100%',objectFit : 'cover'}}/>
 
         </div>
 
