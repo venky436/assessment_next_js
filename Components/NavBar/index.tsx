@@ -8,8 +8,8 @@ export default function NavBar() {
 
   const [inputValue,setInputValue] = React.useState<string>()
   let inputHandler = (e:any)=>{
-    console.log(e.target)
-    setInputValue(e.target)
+    setInputValue(e.target.value)
+    
   }
   return (
     <div className={styles.mainContainer}>
@@ -21,7 +21,7 @@ export default function NavBar() {
         <Image src={searchImg} alt='search' style={{
           cursor : 'not-allowed'
         }}/>
-        <input type='text' value={inputValue} onChange={(e)=>inputHandler(e)} className={styles.input} placeholder='search for anything'/>
+        <input type='text' value={inputValue} onChange={(e)=>inputHandler(e)} className={styles.input} placeholder='search for course'/>
          
       </div>
       <div className={styles.right_buttons}>
