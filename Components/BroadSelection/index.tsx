@@ -1,15 +1,18 @@
 import React, { useState } from 'react'
 import styles from './Broadsection.module.css'
-import { broadSelection } from '@/pages/BoardSectionData'
 import CourseBox from './CourseBox'
+import { broadSelection } from '@/BoardSectionData'
 import Card from './Card'
 
 export default function BroadSelection() {
     const [broadData, setBroadData] = React.useState(broadSelection)
     const [activeIndex, setActiveIndex] = React.useState<number>(0)
 
+    const [clicks,setClicks] = React.useState<number>(0)
+
     let courseHandler = (index: number) => {
         setActiveIndex(index)
+        setClicks(0)
     }
 
    

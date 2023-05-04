@@ -1,3 +1,28 @@
+
+import PyhonImg_1 from './public/Images/PythonImg.png'
+import PyhonImg_2 from './public/Images/python_1.png'
+import PyhonImg_3 from './public/Images/python_2.jpg'
+import PyhonImg_4 from './public/Images/python_3.jpg'
+
+import excel_1 from './public/Images/excel_1.jpg'
+import excel_2 from './public/Images/excel_2.png'
+import excel_3 from './public/Images/excel_3.jpg'
+import excel_4 from './public/Images/excel_4.jpg'
+
+import javaScript_1 from './public/Images/JavaScriptImg.png'
+import javaScript_2 from './public/Images/javaScript_1.jpg'
+
+
+
+
+
+
+
+import ExcelImg from './public/Images/ExcelImg.png'
+import JavaScriptImg from './public/Images/JavaScriptImg.png'
+
+
+
 export const broadSelection = [
     {
         title: 'Python',
@@ -6,7 +31,7 @@ export const broadSelection = [
         buttonText : 'Explore Python',
         courses : [
             {
-                image : '',
+                image : PyhonImg_1,
                 heading : 'The Complete Python Bootcamp From Zero to Hero in Python',
                 author : 'Jose Portilla',
                 rating : '4.6',
@@ -25,7 +50,7 @@ export const broadSelection = [
 
             },
             {
-                image : '',
+                image : PyhonImg_2,
                 heading : 'The Complete Python Bootcamp From Zero to Hero in Python',
                 author : 'Jose Portilla',
                 rating : '4.3',
@@ -44,7 +69,7 @@ export const broadSelection = [
 
             },
             {
-                image : '',
+                image :PyhonImg_3,
                 heading : 'The Complete Python Bootcamp From Zero to Hero in Python',
                 author : 'Jose Portilla',
                 rating : '4.3',
@@ -62,7 +87,7 @@ export const broadSelection = [
                 }
 
             }, {
-                image : '',
+                image : PyhonImg_1,
                 heading : 'The Complete Python Bootcamp From Zero to Hero in Python',
                 author : 'Jose Portilla',
                 rating : '4.3',
@@ -80,7 +105,7 @@ export const broadSelection = [
                 }
 
             }, {
-                image : '',
+                image : PyhonImg_2,
                 heading : 'The Complete Python Bootcamp From Zero to Hero in Python',
                 author : 'Jose Portilla',
                 rating : '4.3',
@@ -98,7 +123,7 @@ export const broadSelection = [
                 }
 
             }, {
-                image : '',
+                image : PyhonImg_3,
                 heading : 'The Complete Python Bootcamp From Zero to Hero in Python',
                 author : 'Jose Portilla',
                 rating : '4.3',
@@ -117,7 +142,7 @@ export const broadSelection = [
 
             },
             {
-                image : '',
+                image : PyhonImg_1,
                 heading : 'The Complete Python Bootcamp From Zero to Hero in Python',
                 author : 'Jose Portilla',
                 rating : '4.3',
@@ -144,7 +169,7 @@ export const broadSelection = [
         buttonText : 'Explore Excel',
         courses : [
             {
-                image : '',
+                image : excel_1,
                 heading : 'Microsoft Excel - Excel from Beginner to Advanced',
                 author : 'Kyle Pew',
                 rating : '4.5',
@@ -163,7 +188,7 @@ export const broadSelection = [
 
             },
             {
-                image : '',
+                image : excel_2,
                 heading : 'Microsoft Excel - Excel from Beginner to Advanced',
                 author : 'Kyle Pew',
                 rating : '4.0',
@@ -180,7 +205,65 @@ export const broadSelection = [
                     ]
                 }
 
-            }
+            },
+            {
+                image : excel_3,
+                heading : 'Microsoft Excel - Excel from Beginner to Advanced',
+                author : 'Kyle Pew',
+                rating : '4.0',
+                reviewsCount : '371,365',
+                offerPrice : '499',
+                price : '3,399',
+                cardData : {
+                    totalTime : '19',
+                    text : `Excel with this A-Z Microsoft Excel Course. Microsoft Excel 2010, 2013, 2016, Excel 2019 and Microsoft/Office 365`,
+                    keyPoints : [
+                        `Master Microsoft Excel from Beginner to Advanced`,
+                        `Build a solid understanding on the Basics of Microsoft Excel`,
+                        `Learn the most common Excel functions used in the Office`,
+                    ]
+                }
+
+            },
+            {
+                image : excel_4,
+                heading : 'Microsoft Excel - Excel from Beginner to Advanced',
+                author : 'Kyle Pew',
+                rating : '4.0',
+                reviewsCount : '371,365',
+                offerPrice : '499',
+                price : '3,399',
+                cardData : {
+                    totalTime : '19',
+                    text : `Excel with this A-Z Microsoft Excel Course. Microsoft Excel 2010, 2013, 2016, Excel 2019 and Microsoft/Office 365`,
+                    keyPoints : [
+                        `Master Microsoft Excel from Beginner to Advanced`,
+                        `Build a solid understanding on the Basics of Microsoft Excel`,
+                        `Learn the most common Excel functions used in the Office`,
+                    ]
+                }
+
+            },
+            {
+                image : excel_1,
+                heading : 'Microsoft Excel - Excel from Beginner to Advanced',
+                author : 'Kyle Pew',
+                rating : '4.0',
+                reviewsCount : '371,365',
+                offerPrice : '499',
+                price : '3,399',
+                cardData : {
+                    totalTime : '19',
+                    text : `Excel with this A-Z Microsoft Excel Course. Microsoft Excel 2010, 2013, 2016, Excel 2019 and Microsoft/Office 365`,
+                    keyPoints : [
+                        `Master Microsoft Excel from Beginner to Advanced`,
+                        `Build a solid understanding on the Basics of Microsoft Excel`,
+                        `Learn the most common Excel functions used in the Office`,
+                    ]
+                }
+
+            },
+           
         ]
     },
     {
@@ -190,7 +273,7 @@ export const broadSelection = [
         buttonText : 'Explore JavaScript',
         courses : [
             {
-                image : '',
+                image : javaScript_1,
                 heading : 'The Complete Full-Stack JavaScript Course',
                 author : 'jonos',
                 rating : '4.9',
@@ -209,7 +292,7 @@ export const broadSelection = [
 
             },
             {
-                image : '',
+                image : javaScript_2,
                 heading : 'The Complete Full-Stack JavaScript Course',
                 author : 'jonos',
                 rating : '4.1',

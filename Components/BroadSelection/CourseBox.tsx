@@ -4,14 +4,21 @@ import Card from './Card'
 
 import Image from 'next/image'
 import Slider from './Slider'
+
+
+
 export default function CourseBox({ object }: BroadSelectionNS.IPropsForCourseBox) {
   let sendCardNode =
   <>
       {
-          object.courses.map((each, index) => (
-              <Card cardDetails={each} key={index} />
+          object?.courses.map((each, index) => (
+           
+              <Card cardDetails={each} key={index} widthOfCard={300}  
+              />
+            
           ))
       }
+      
   </>
 
   return (
@@ -25,7 +32,7 @@ export default function CourseBox({ object }: BroadSelectionNS.IPropsForCourseBo
         {object.buttonText}
       </button>
 
-      <Slider cardNode={sendCardNode} lengthOfArray={object.courses.length}/>
+      <Slider cardNode={sendCardNode} lengthOfArray={object.courses.length} title={object.title} idForSlider='broad_slider' idForSubSlider='broad_sub_slider' widthOfEachCard = {300}/>
 
     </div>
   )

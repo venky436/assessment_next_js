@@ -1,11 +1,11 @@
 import React from 'react'
 import styles from './Broadsection.module.css'
 import sliderStyles from '../Slider/Slider.module.css'
-import leftArrow from '../../../public/Images/leftArrow.png'
-import rightArrow from '../../../public/Images/rightArrow.png'
+import leftArrow from '../../public/Images/leftArrow.png'
+import rightArrow from '../../public/Images/rightArrow.png'
 import Image from 'next/image'
 
-export default function Slider({lengthOfArray,cardNode}:BroadSelectionNS.IPropsForSlider) {
+export default function Slider({lengthOfArray,cardNode,title,idForSlider,idForSubSlider,widthOfEachCard}:BroadSelectionNS.IPropsForSlider) {
     const [index, setIndex] = React.useState<number>(0)
 
     const [sliderWidth, setSliderWidth] = React.useState<number>(0)
@@ -19,27 +19,28 @@ export default function Slider({lengthOfArray,cardNode}:BroadSelectionNS.IPropsF
     const [subSliderReference,setSubSliderReference] = React.useState<HTMLElement>()
   
     let getSliderReference = ()=>{
-      let slider = document.getElementById('slider')
+      let slider = document.getElementById(idForSlider)
       let width: any = slider?.getBoundingClientRect().width
       setSliderWidth(width)
-      let cardsCanFit = width / 310
+      let cardsCanFit = width / widthOfEachCard
       let allowClicks = lengthOfArray - cardsCanFit
       setAllowedClicks(allowClicks)
       setNumberOfCardsFitInSlider(cardsCanFit)
     }
-  
+
     subSliderReference!== undefined
-    ? (subSliderReference.style.transform = `translateX(${-(310 * countOfClick)}px)`)
+    ? (subSliderReference.style.transform = `translateX(${-(widthOfEachCard  * countOfClick)}px)`)
     : null;
   
     let rightHandler = () => {
       let clicksCount = countOfClick +1
-      let slider:any = document.getElementById('sub_slider')
+      let slider:any = document.getElementById(idForSubSlider)
       if(lengthOfArray <= numberOfCardsFixInSlider || countOfClick > allowedClicks ){
         return 
       }else{
         setCountOfClick(clicksCount)
-        slider.style.transform = `translateX(${- countOfClick * 310}px)`
+
+        slider.style.transform = `translateX(${- countOfClick * widthOfEachCard }px)`
         slider.style.transition = `all 1s`
       }
     }
@@ -48,29 +49,33 @@ export default function Slider({lengthOfArray,cardNode}:BroadSelectionNS.IPropsF
       if(countOfClick > 0){
          setCountOfClick(clicksCount)
          if(subSliderReference !== undefined){
-           subSliderReference.style.transform = `translateX(${ countOfClick * 310}px)`
+           subSliderReference.style.transform = `translateX(${ countOfClick * widthOfEachCard }px)`
            subSliderReference.style.transition = `all 1s`
          }
       }
-       
+
     }
     
-  
     function reSize(event: any) {
       getSliderReference()
     }
+
+    React.useEffect(()=>{
+      setCountOfClick(0)
+    },[title])
   
     React.useEffect(() => {
-      let slider:any = document.getElementById('sub_slider')
+      let slider:any = document.getElementById(idForSubSlider)
       setSubSliderReference(slider)
      getSliderReference()
       window.addEventListener('resize', reSize)
       return () => {
         window.removeEventListener('resize', reSize)
+
       }
     }, [])
   return (
-    <div className={styles.slider} id='slider'>
+    <div className={styles.slider} id={idForSlider}>
     {
       lengthOfArray <= numberOfCardsFixInSlider ? null :<> 
       {
@@ -81,8 +86,8 @@ export default function Slider({lengthOfArray,cardNode}:BroadSelectionNS.IPropsF
       }
      </>
     }
-    <div className={styles.sub_slider} id='sub_slider'>
-      {cardNode}
+    <div className={styles.sub_slider} id={idForSubSlider}>
+        {cardNode}
     </div>
   </div>
   )

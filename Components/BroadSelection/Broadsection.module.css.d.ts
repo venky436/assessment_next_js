@@ -15,4 +15,18 @@ export default{
     card : string,
     sub_slider : string,
 
+    // card
+    imageContainer : string,
+    card_heading : string,
+    author : string,
+    rating : string,
+    price : string,
+    hoverCard : string,
+    hover_heading : string,
+    time : string,
+    keyPoints : string,
+    point : string,
+    button_box : string,
+    cart_btn : string
+
 }

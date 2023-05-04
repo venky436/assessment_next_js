@@ -1,0 +1,53 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1280px;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.heading {
+    font-size: 24px;
+    text-align: left;
+    font-weight: bolder;
+}
+.title{
+    font-size: 20px;
+}
+
+.imageContainer {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.imageAndTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+.imgBox{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+.imageAndTitle:hover .img{
+   transform: scale(1.1);
+   transition: all 0.3s;
+} 
