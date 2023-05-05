@@ -27,6 +27,7 @@ export default{
     keyPoints : string,
     point : string,
     button_box : string,
-    cart_btn : string
+    cart_btn : string,
+    hoverCard_
 
 }

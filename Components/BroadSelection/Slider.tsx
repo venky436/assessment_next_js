@@ -5,6 +5,7 @@ import leftArrow from '../../public/Images/leftArrow.png'
 import rightArrow from '../../public/Images/rightArrow.png'
 import Image from 'next/image'
 
+
 export default function Slider({lengthOfArray,cardNode,title,idForSlider,idForSubSlider,widthOfEachCard}:BroadSelectionNS.IPropsForSlider) {
     const [index, setIndex] = React.useState<number>(0)
 

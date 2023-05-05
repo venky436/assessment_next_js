@@ -12,6 +12,7 @@ declare namespace BroadSelectionNS{
 
     interface ICourse {
         id : number;
+        name : string;
         image : any;
         heading : string,
         author : string;
@@ -19,7 +20,8 @@ declare namespace BroadSelectionNS{
         reviewsCount : string;
         offerPrice : string;
         price : string;
-        cardData : ICardData
+        cardData : ICardData,
+        cart : boolean;
     }
     interface IBroadData{
         title : string;

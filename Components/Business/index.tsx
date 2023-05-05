@@ -4,6 +4,7 @@ import Image from 'next/image'
 import styles from './Business.module.css'
 import leftImg from '../../public/Images/busines_left_img.jpg'
 import rightImg from '../../public/Images/businessRightImg.jpg'
+import Link from 'next/link'
 export default function Business() {
 
     let text = [
@@ -42,7 +43,9 @@ export default function Business() {
                         ))
                     }
                     <div className={styles.left_buttons}>
+                        <Link href={'/business'}>
                         <button className={styles.left_btn_1}>Get Udemy Business</button>
+                        </Link>
                         <button className={styles.left_btn_2}>Learn more</button>
                     </div>
 
@@ -96,7 +99,9 @@ export default function Business() {
                         ))
                     }
                     <div className={styles.left_buttons}>
+                    <Link href={'/teach'}>
                         <button className={styles.left_btn_1}>Start teaching today</button>
+                        </Link>
                        
                     </div>
                     

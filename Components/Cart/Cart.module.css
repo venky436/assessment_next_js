@@ -1,0 +1,21 @@
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 30px ;
+
+}
+.container{
+    display: flex;
+     width:100%;
+     max-width: 1280px;
+     flex-direction: column;
+     gap: 30px;
+}
+.emptyCart{
+    text-align: center;
+    font-size: 24px;
+    color: green;
+    font-weight: bolder;
+}

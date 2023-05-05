@@ -15,8 +15,12 @@ export default function CourseBox({ object }: BroadSelectionNS.IPropsForCourseBo
   <>
       {
           courses.map((each, index) => (
+            <>
+           
               <Card cardDetails={each} key={index} widthOfCard={300}  
               />
+          
+            </>
             
           ))
       }
