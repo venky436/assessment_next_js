@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function teach() {
+export default function Teach() {
   return (
     <div style={{
         display : 'flex',
@@ -16,9 +16,8 @@ export default function teach() {
             marginTop : '30px'
 
         }}>
-            Sorry I don't have enough time to build this page  
+           {` Sorry I don't have enough time to build this page`}  
         </div>
-
     </div>
   )
 }

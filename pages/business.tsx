@@ -15,7 +15,7 @@ export default function business() {
             marginTop : '30px'
 
         }}>
-            Sorry I don't have enough time to build this page  
+            {` Sorry I don't have enough time to build this page`}  
         </div>
     </div>
   )
