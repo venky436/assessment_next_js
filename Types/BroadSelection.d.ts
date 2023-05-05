@@ -1,5 +1,9 @@
 declare namespace BroadSelectionNS{
 
+    interface Iprops{
+         data : IBroadData[]
+    }
+
     interface ICardData{
         totalTime : string;
         text : string;
@@ -7,6 +11,7 @@ declare namespace BroadSelectionNS{
     }
 
     interface ICourse {
+        id : number;
         image : any;
         heading : string,
         author : string;

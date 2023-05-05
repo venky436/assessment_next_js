@@ -10,7 +10,7 @@ export default function Learners() {
   let node = <>
   {
     goals.map((each,index)=>(
-      <LearnCard widthOfCard ={400} cardDetails = {each}/>
+      <LearnCard widthOfCard ={400} cardDetails = {each} key={index}/>
     ))
   }
   </>

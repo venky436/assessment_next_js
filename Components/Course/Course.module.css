@@ -1,0 +1,15 @@
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 1280;
+    margin: 0 auto;
+}
+.card_container{
+    display:flex ;
+    width: 700px;
+    height: 200px;
+    background-color: red;
+}

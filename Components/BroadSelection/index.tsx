@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
 import styles from './Broadsection.module.css'
 import CourseBox from './CourseBox'
-import { broadSelection } from '@/BoardSectionData'
 import Card from './Card'
 
-export default function BroadSelection() {
-    const [broadData, setBroadData] = React.useState(broadSelection)
+export default function BroadSelection({data}:BroadSelectionNS.Iprops) {
+    const [broadData, setBroadData] = React.useState<BroadSelectionNS.IBroadData[]>(data)
     const [activeIndex, setActiveIndex] = React.useState<number>(0)
 
     const [clicks,setClicks] = React.useState<number>(0)
@@ -14,8 +13,6 @@ export default function BroadSelection() {
         setActiveIndex(index)
         setClicks(0)
     }
-
-   
 
     return (
         <div className={styles.container}>
@@ -26,7 +23,7 @@ export default function BroadSelection() {
             </div>
             <div className={styles.courses}>
                 {
-                    broadData.map((each, index) => (
+                    broadData?.map((each, index) => (
                         <h3 key={index} className={styles.title} onClick={() => courseHandler(index)} style={index == activeIndex ? { color: 'black' } : { color: 'rgba(0, 0, 0,0.4)' }}>
                             {
                                 each.title
@@ -36,7 +33,7 @@ export default function BroadSelection() {
                 }
             </div>
             <div className={styles.course_box}>
-                <CourseBox object={broadData[activeIndex]}  />
+                <CourseBox object={broadData?.[activeIndex]}  />
             </div>
         </div>
     )

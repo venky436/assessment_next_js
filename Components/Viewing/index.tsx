@@ -1,11 +1,14 @@
 import React from 'react'
 import styles from './Viewing.module.css'
 import Slider from '../BroadSelection/Slider'
-import { broadSelection } from '@/BoardSectionData'
 import Card from '../BroadSelection/Card'
 
-export default function Viewing() {
-    const [data,setData] = React.useState<BroadSelectionNS.IBroadData[]>(broadSelection)
+
+interface IProps{
+    dataFromParent : BroadSelectionNS.IBroadData[]
+}
+export default function Viewing({dataFromParent}:IProps) {
+    const [data,setData] = React.useState<BroadSelectionNS.IBroadData[]>(dataFromParent)
     let collectAllCourses = data.flatMap((each)=>{
         return each.courses.map((e)=>e)
     })

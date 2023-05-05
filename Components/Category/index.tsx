@@ -1,13 +1,15 @@
 import React from 'react'
 import styles from './Category.module.css'
-import { categoryData } from '@/GoalsData'
 import Image from 'next/image'
 
 interface CategoryData{
     title : string,
     image : any
 }
-export default function Category() {
+interface IProps{
+    categoryData : CategoryData[]
+}
+export default function Category({categoryData}:IProps) {
     const [data,setData] = React.useState<CategoryData[]>(categoryData)
   return (
     <div className={styles.mainContainer}>
