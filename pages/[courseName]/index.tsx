@@ -7,7 +7,8 @@ import Link from 'next/link'
 interface IProps{
   course : BroadSelectionNS.IBroadData
 }
-export default function Python({course}:IProps) {
+export default function python({course}:IProps) {
+  console.log()
   let route = useRouter() 
 
   let {courseName} = route.query
@@ -18,7 +19,7 @@ export default function Python({course}:IProps) {
         <h1>{courseName} </h1> 
         <hr/>
       {
-        course.courses.map((each,index)=>(
+        course?.courses?.map?.((each,index)=>(
           <>
           <Link href={`${course.title}/${each.id}`}>
 
@@ -37,7 +38,9 @@ export default function Python({course}:IProps) {
 
 
 export async function getServerSideProps(context:any) {
+  console.log(context)
   let findCourse = broadSelection.find((each)=>each.title == context.query.courseName )
+  console.log({findCourse})
   return {
     props : {
        course : findCourse

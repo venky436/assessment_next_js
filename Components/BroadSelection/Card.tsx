@@ -11,7 +11,7 @@ export default function Card({cardDetails,widthOfCard}:BroadSelectionNS.IPropsFo
   return (
     <Tooltip  overlay={<HoverCard data={cardDetails}/> } trigger={['click','hover']}  overlayClassName={styles.hoverCard_} >
 
-<Link href={`${cardDetails.name}/${cardDetails.id}`}>
+{/* <Link href={`/${cardDetails.name}/${cardDetails.id}`}> */}
 <div  className={styles.card} style={{minWidth : `${widthOfCard}px`}} >
         <div className={styles.imageContainer}>
           <Image src={cardDetails.image ?? ''} alt='image' style={{display : 'block',width:'100%',height:'100%'}}/>
@@ -25,7 +25,7 @@ export default function Card({cardDetails,widthOfCard}:BroadSelectionNS.IPropsFo
            ${cardDetails.offerPrice}
         </div>
     </div>
-</Link>
+{/* </Link> */}
    
     </Tooltip>
     

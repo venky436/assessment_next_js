@@ -10,6 +10,7 @@ import Category from '@/Components/Category'
 import Business from '@/Components/Business'
 import { broadSelection } from '@/BoardSectionData'
 import { categoryData } from '@/GoalsData'
+import { viewData } from '@/BoardSectionData'
 
 interface CategoryData{
   title : string,
@@ -17,16 +18,17 @@ interface CategoryData{
 }
 interface HomePageProps{
   CourseData : BroadSelectionNS.IBroadData[],
-  categoryData : CategoryData[]
+  categoryData : CategoryData[],
+  viewData : BroadSelectionNS.IBroadData[]
 }
 
-export default function Home({CourseData,categoryData}:HomePageProps) {
+export default function Home({CourseData,categoryData,viewData}:HomePageProps) {
   return (
     <>
       <Slider/>
       <BroadSelection data={CourseData} />
       <Learners/>
-      <Viewing dataFromParent={CourseData}/>
+      <Viewing dataFromParent={viewData}/>
       <Category categoryData={categoryData}/>
       <Business/>
     </>
@@ -40,11 +42,14 @@ export default function Home({CourseData,categoryData}:HomePageProps) {
 
 //  There is one more fuction called  * getStaticProps() * this is for SSG website
 
+//  getStaticPaths() for SSG dynamic route
+
 export async function getServerSideProps(context:any) {
   return {
     props: {
       CourseData : broadSelection,
-      categoryData : categoryData
+      categoryData : categoryData,
+      viewData : viewData
     }, 
   };
 }

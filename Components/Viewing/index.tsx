@@ -3,7 +3,6 @@ import styles from './Viewing.module.css'
 import Slider from '../BroadSelection/Slider'
 import Card from '../BroadSelection/Card'
 import Link from 'next/link'
-import { viewData } from '@/BoardSectionData'
 
 interface IProps{
     dataFromParent : BroadSelectionNS.IBroadData[]
@@ -13,15 +12,14 @@ export default function Viewing({dataFromParent}:IProps) {
     // let collectAllCourses = data.flatMap((each)=>{
     //     return each.courses.map((e)=>e)
     // })
+    let collectAllCourse = data?.flatMap((each)=>each.courses)
     let sendCardNode =
     <>
         {
-           viewData.map((each, index) => (
+           collectAllCourse.map((each, index) => (
                 <>
-               
                  <Card cardDetails={each} key={index} widthOfCard={300}  
                 />
-               
                 </>
             ))
         }
@@ -32,7 +30,7 @@ export default function Viewing({dataFromParent}:IProps) {
              <h1 className={styles.heading}>Students are viewing</h1>
         </div>
         <div className={styles.viewSlider}>
-            <Slider lengthOfArray={viewData.length} cardNode={sendCardNode} idForSlider={'view_Slider'} idForSubSlider={'view_sub_slider'} widthOfEachCard={310}/>
+            <Slider lengthOfArray={collectAllCourse.length} cardNode={sendCardNode} idForSlider={'view_Slider'} idForSubSlider={'view_sub_slider'} widthOfEachCard={310}/>
         </div>
     </div>
   )
