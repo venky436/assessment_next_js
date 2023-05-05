@@ -18,7 +18,7 @@ export default function Viewing({dataFromParent}:IProps) {
         {
            collectAllCourse.map((each, index) => (
                 <>
-                 <Card cardDetails={each} key={index} widthOfCard={300}  
+                 <Card cardDetails={each} key={index} widthOfCard={300}   linkNotNeed={true}
                 />
                 </>
             ))

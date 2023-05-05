@@ -36,7 +36,8 @@ declare namespace BroadSelectionNS{
     }
     interface IPropsForCard{
         cardDetails : ICourse;
-        widthOfCard : number
+        widthOfCard : number,
+        linkNotNeed? : boolean
     }
     interface IPropsForSlider{
         lengthOfArray : number;

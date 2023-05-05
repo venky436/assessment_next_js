@@ -7,7 +7,7 @@ import Link from 'next/link'
 interface IProps{
   course : BroadSelectionNS.IBroadData
 }
-export default function python({course}:IProps) {
+export default function Courses({course}:IProps) {
   console.log()
   let route = useRouter() 
 
