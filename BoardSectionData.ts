@@ -3,6 +3,8 @@ import PyhonImg_1 from './public/Images/PythonImg.png'
 import PyhonImg_2 from './public/Images/python_1.png'
 import PyhonImg_3 from './public/Images/python_2.jpg'
 import PyhonImg_4 from './public/Images/python_3.jpg'
+import PyhonImg_5 from './public/Images/python_5.png'
+
 
 import excel_1 from './public/Images/excel_1.jpg'
 import excel_2 from './public/Images/excel_2.png'
@@ -11,12 +13,6 @@ import excel_4 from './public/Images/excel_4.jpg'
 
 import javaScript_1 from './public/Images/JavaScriptImg.png'
 import javaScript_2 from './public/Images/javaScript_1.jpg'
-
-
-
-
-
-
 
 import ExcelImg from './public/Images/ExcelImg.png'
 import JavaScriptImg from './public/Images/JavaScriptImg.png'
@@ -369,7 +365,7 @@ export let viewData = [
             {
                 id: 15,
                 name : 'Python',
-                image: PyhonImg_1,
+                image: PyhonImg_5,
                 heading: 'The Complete Python Bootcamp From Zero to Hero in Python',
                 author: 'Jose Portilla',
                 rating: '4.6',
@@ -391,7 +387,7 @@ export let viewData = [
             {
                 id: 16,
                 name : 'Python',
-                image: PyhonImg_2,
+                image: PyhonImg_4,
                 heading: 'The Complete Python Bootcamp From Zero to Hero in Python',
                 author: 'Jose Portilla',
                 rating: '4.3',

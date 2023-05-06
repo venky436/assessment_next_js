@@ -9,9 +9,7 @@ interface IProps{
 }
 export default function Viewing({dataFromParent}:IProps) {
     const [data,setData] = React.useState<BroadSelectionNS.IBroadData[]>(dataFromParent)
-    // let collectAllCourses = data.flatMap((each)=>{
-    //     return each.courses.map((e)=>e)
-    // })
+    
     let collectAllCourse = data?.flatMap((each)=>each.courses)
     let sendCardNode =
     <>
